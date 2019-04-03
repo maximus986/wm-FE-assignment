@@ -1,1 +1,12 @@
+$body-background-color: $gray-light-1;
+$text-color: $gray-dark-2;
 
+html {
+  font-size: 13px;
+}
+
+body {
+  background: $body-background-color;
+  color: $text-color;
+  font-family: $arial;
+}
