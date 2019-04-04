@@ -1,0 +1,37 @@
+$info-img-background-color: $gray-light-4;
+$text-color: $gray-dark-3;
+$text-white: $white;
+$btn-background-color: $gray-light-3;
+$btn-hover-background-color: $green-light;
+
+.info-img {
+  padding: 3.5rem 2.3rem;
+  background: $info-img-background-color;
+  //max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  & a {
+    display: inline-block;
+    width: 59px;
+    height: 46px;
+    line-height: 46px;
+    background: url('../img/content-icons-sprite.png') no-repeat;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.btn-info {
+  background: $btn-background-color;
+  transition: 0.3s linear;
+  &:hover {
+    background: $btn-hover-background-color;
+    color: $text-white;
+  }
+}
