@@ -1,5 +1,11 @@
 $body-background-color: $gray-light-1;
-$text-color: $gray-dark-2;
+$text-color: $gray-dark-3;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   font-size: 13px;
@@ -8,5 +14,17 @@ html {
 body {
   background: $body-background-color;
   color: $text-color;
-  font-family: $arial;
+  font-family: $dinPro;
+}
+
+body *:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,0 +1,208 @@
+$input-border-color: $gray-light-7;
+$text-color: $gray-dark-3;
+$links-color: $gray-dark-2;
+$text-white: $white;
+$border-color: #d2e2cb;
+
+.header {
+  padding: 10px 0;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .logo {
+      display: inline-block;
+      max-width: 50%;
+    }
+
+    &-action {
+      display: flex;
+      align-items: center;
+      .search {
+        margin-left: 10px;
+        &-icon {
+          display: inline-block;
+          background: url('../img/search-icons-sprite.png') no-repeat;
+          background-position: -10px -26px;
+          width: 16px;
+          height: 16px;
+          &.active {
+            background-position: -10px 0;
+          }
+        }
+
+        &-form {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          padding-top: 13px;
+          display: none;
+
+          &-input {
+            width: 100%;
+            border: 1px solid $input-border-color;
+            border-radius: 2px;
+            color: $text-color;
+            padding: 4.5px 10px;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .main-menu {
+      list-style: none;
+      position: absolute;
+      top: 100%;
+      left: -4%;
+      width: 120%;
+      margin-top: 13px;
+      display: none;
+      &-link {
+        display: block;
+        color: $text-white;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-bottom: 1px solid $border-color;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 3%;
+        &__text {
+          color: $text-white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .header {
+    .navbar {
+      .logo {
+        max-width: 80%;
+        margin-right: 20px;
+        order: 1;
+      }
+
+      &-action {
+        order: 3;
+        .search {
+          margin-left: 20px;
+        }
+
+        .hamburger {
+          display: none;
+        }
+      }
+      .main-menu {
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        margin-top: 0;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        order: 2;
+        margin-left: auto;
+        &-item {
+          margin: 0 18px;
+        }
+        &-link {
+          display: inline-block;
+          border-bottom: none;
+          padding: 0;
+          background-image: url('../img/menu-icons-sprite.png');
+          width: 27px;
+          height: 21px;
+
+          &__text {
+            display: none;
+          }
+        }
+        #home {
+          background-position: -10px -118px;
+          width: 23px;
+          transition: 0.1s ease-in;
+          &:hover {
+            background-position: -10px -149px;
+          }
+        }
+        #about {
+          background-position: -10px -180px;
+          width: 22px;
+          transition: 0.1s ease-in;
+          &:hover {
+            background-position: -10px -211px;
+          }
+        }
+        #work {
+          background-position: -10px 0;
+          height: 20px;
+          transition: 0.1s ease-in;
+          &:hover {
+            background-position: -10px -31px;
+          }
+        }
+        #contact {
+          background-position: -10px -62px;
+          height: 18px;
+          transition: 0.1s ease-in;
+          &:hover {
+            background-position: -10px -90px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    .navbar {
+      .main-menu {
+        &-item {
+          margin: 0 0;
+        }
+        &-link {
+          background-image: none;
+          width: auto;
+          height: auto;
+          font-size: 1.3rem;
+
+          &__text {
+            display: inline;
+            color: $links-color;
+            transition: 0.3s linear;
+            &:after {
+              content: '/';
+              display: inline-block;
+              padding: 0 15px;
+            }
+            &:hover {
+              color: inherit;
+            }
+          }
+        }
+        #home {
+          width: auto;
+        }
+        #about {
+          width: auto;
+        }
+        #work {
+          background-position: -10px 0;
+          height: auto;
+        }
+        #contact {
+          height: auto;
+          & .main-menu-link__text:after {
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}
