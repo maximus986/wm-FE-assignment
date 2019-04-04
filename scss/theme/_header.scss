@@ -2,7 +2,8 @@ $input-border-color: $gray-light-7;
 $text-color: $gray-dark-3;
 $links-color: $gray-dark-2;
 $text-white: $white;
-$border-color: #d2e2cb;
+$border-color: $grayish;
+$form-background-color: $gray-light-1;
 
 .header {
   padding: 10px 0;
@@ -39,9 +40,10 @@ $border-color: #d2e2cb;
           top: 100%;
           left: 0;
           width: 100%;
-          padding-top: 13px;
+          padding: 13px;
           display: none;
-
+          background: $form-background-color;
+          z-index: 200;
           &-input {
             width: 100%;
             border: 1px solid $input-border-color;
@@ -54,12 +56,12 @@ $border-color: #d2e2cb;
       }
     }
     .main-menu {
-      list-style: none;
       position: absolute;
       top: 100%;
       left: -4%;
       width: 120%;
-      margin-top: 13px;
+      z-index: 100;
+      margin-top: 10px;
       display: none;
       &-link {
         display: block;

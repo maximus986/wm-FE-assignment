@@ -1,6 +1,6 @@
 $body-background-color: $gray-light-1;
 $text-color: $gray-dark-3;
-
+$headings-color: $gray-dark-4;
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +20,14 @@ body {
 body *:focus {
   outline: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $headings-color;
+}
 
 img {
   max-width: 100%;
@@ -27,4 +35,13 @@ img {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.section-title {
+  font-size: 2.07rem;
+  margin-bottom: 13px;
 }

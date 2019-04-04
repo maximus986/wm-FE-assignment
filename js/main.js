@@ -4,6 +4,7 @@ $(document).ready(function() {
   const searchIcon = $('.search-icon');
   const searchForm = $('.search-form');
   const mainMenu = $('.main-menu');
+  const leadSlider = $('.lead-slider');
 
   //Toggle form
   searchIcon.click(function() {
@@ -30,11 +31,21 @@ $(document).ready(function() {
     }
   });
 
-  //Links background color
+  //Links color
   linksColors();
 
   $(window).resize(function() {
     linksColors();
+  });
+
+  //Lead slider
+  leadSlider.owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    dots: true,
+    nav: true,
+    navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>']
   });
 
   function linksColors() {
