@@ -1200,5 +1200,28 @@ ul {
       font-size: 2.35rem; }
   .main-content .work {
     padding-top: 0; } }
+.footer {
+  padding: 12px 0;
+  background: #dbdbdb; }
+  .footer .footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .footer .footer-nav .footer-nav-menu {
+      display: none; }
+    .footer .footer-nav .to-top {
+      display: inline-block;
+      width: 38px;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #f3f3f4;
+      background-image: url("../img/footer-icons-sprite.png");
+      background-repeat: no-repeat;
+      background-position: 2px -139px;
+      transition: 0.1s ease-in; }
+      .footer .footer-nav .to-top:hover {
+        background-position: 2px -105px; }
 
 /*# sourceMappingURL=theme.css.map */
