@@ -51,10 +51,8 @@ $(document).ready(function() {
   });
 
   //Smooth scroll
-  toTop.click(function() {
-    body.scrollIntoView({
-      behavior: 'smooth'
-    });
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 300
   });
 
   //Functions
