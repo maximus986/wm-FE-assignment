@@ -76,8 +76,13 @@
 }
 .hamburger--slider .hamburger-inner::before {
   top: 6px;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
+  -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
 }
 .hamburger--slider .hamburger-inner::after {
@@ -85,12 +90,15 @@
 }
 
 .hamburger--slider.is-active .hamburger-inner {
+  -webkit-transform: translate3d(0, 6px, 0) rotate(45deg);
   transform: translate3d(0, 6px, 0) rotate(45deg);
 }
 .hamburger--slider.is-active .hamburger-inner::before {
+  -webkit-transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
   transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
   opacity: 0;
 }
 .hamburger--slider.is-active .hamburger-inner::after {
+  -webkit-transform: translate3d(0, -12px, 0) rotate(-90deg);
   transform: translate3d(0, -12px, 0) rotate(-90deg);
 }

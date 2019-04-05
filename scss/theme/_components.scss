@@ -7,7 +7,6 @@ $btn-hover-background-color: $green-light;
 .info-img {
   padding: 3.5rem 2.3rem;
   background: $info-img-background-color;
-  //max-width: 200px;
   text-align: center;
   margin: 0 auto;
   & a {
@@ -29,6 +28,7 @@ $btn-hover-background-color: $green-light;
 
 .btn-info {
   background: $btn-background-color;
+  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
   &:hover {
     background: $btn-hover-background-color;

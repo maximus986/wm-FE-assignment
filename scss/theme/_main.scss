@@ -34,6 +34,7 @@ $owl-dot-active-background-color: $green-light;
         .owl-next {
           position: absolute;
           bottom: 50%;
+          -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
           &:hover {
             background: transparent;
@@ -64,6 +65,7 @@ $owl-dot-active-background-color: $green-light;
           position: absolute;
           top: 100%;
           left: 50%;
+          -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
           width: 100%;
           border-bottom: 2px solid $lead-slider-border-color;
@@ -100,6 +102,7 @@ $owl-dot-active-background-color: $green-light;
 
     #work {
       background-position: -10px -56px;
+      -webkit-transition: 0.1s ease-in;
       transition: 0.1s ease-in;
       &:hover {
         background-position: -10px -0;
@@ -107,6 +110,7 @@ $owl-dot-active-background-color: $green-light;
     }
     #thumbs-up {
       background-position: -16px -377px;
+      -webkit-transition: 0.1s ease-in;
       transition: 0.1s ease-in;
       width: 41px;
       &:hover {
@@ -136,6 +140,7 @@ $owl-dot-active-background-color: $green-light;
     }
     #calc {
       background-position: -10px -599px;
+      -webkit-transition: 0.1s ease-in;
       transition: 0.1s ease-in;
       width: 40px;
       &:hover {
@@ -144,6 +149,7 @@ $owl-dot-active-background-color: $green-light;
     }
     #clock {
       background-position: -10px -489px;
+      -webkit-transition: 0.1s ease-in;
       transition: 0.1s ease-in;
       width: 44px;
       &:hover {
@@ -152,6 +158,7 @@ $owl-dot-active-background-color: $green-light;
     }
     #cloud {
       background-position: -10px -161px;
+      -webkit-transition: 0.1s ease-in;
       transition: 0.1s ease-in;
       width: 57px;
       &:hover {
@@ -160,6 +167,7 @@ $owl-dot-active-background-color: $green-light;
     }
     #heart {
       background-position: -10px -265px;
+      -webkit-transition: 0.1s ease-in;
       transition: 0.1s ease-in;
       width: 50px;
       &:hover {
@@ -190,6 +198,7 @@ $owl-dot-active-background-color: $green-light;
             background: $owl-dot-background-color;
             display: block;
             -webkit-backface-visibility: visible;
+            -webkit-transition: opacity 0.2s ease;
             transition: opacity 0.2s ease;
             border-radius: 50%;
           }
@@ -202,6 +211,8 @@ $owl-dot-active-background-color: $green-light;
           padding: 32px 0;
           position: relative;
           .row {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
           }
           &-img {
@@ -211,6 +222,7 @@ $owl-dot-active-background-color: $green-light;
             position: static;
             top: auto;
             left: auto;
+            -webkit-transform: translateX(0);
             transform: translateX(0);
             border-bottom: none;
             .lead-title {
@@ -234,6 +246,8 @@ $owl-dot-active-background-color: $green-light;
       width: 100%;
 
       .row {
+        -webkit-box-align: strecth;
+        -ms-flex-align: strecth;
         align-items: strecth;
       }
 

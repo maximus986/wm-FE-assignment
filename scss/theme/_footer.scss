@@ -7,10 +7,18 @@ $footer-nav-links-hover-color: $green-light;
   padding: 12px 0;
   background: $footer-background-color;
   .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     .social {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       &-link {
         width: 38px;
@@ -28,6 +36,7 @@ $footer-nav-links-hover-color: $green-light;
         }
         #facebook {
           background-position: 2px -208px;
+          -webkit-transition: 0.1s ease-in;
           transition: 0.1s ease-in;
           &:hover {
             background-position: 2px -174px;
@@ -35,6 +44,7 @@ $footer-nav-links-hover-color: $green-light;
         }
         #twitter {
           background-position: -3px -74px;
+          -webkit-transition: 0.1s ease-in;
           transition: 0.1s ease-in;
           &:hover {
             background-position: -3px -47px;
@@ -42,6 +52,7 @@ $footer-nav-links-hover-color: $green-light;
         }
         #email {
           background-position: -4px -19px;
+          -webkit-transition: 0.1s ease-in;
           transition: 0.1s ease-in;
           &:hover {
             background-position: -4px 9px;
@@ -64,6 +75,7 @@ $footer-nav-links-hover-color: $green-light;
       background-image: url('../img/footer-icons-sprite.png');
       background-repeat: no-repeat;
       background-position: 2px -139px;
+      -webkit-transition: 0.1s ease-in;
       transition: 0.1s ease-in;
       &:hover {
         background-position: 2px -105px;
@@ -76,6 +88,8 @@ $footer-nav-links-hover-color: $green-light;
   .footer {
     .footer-nav {
       .footer-nav-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         &-item {
           margin-right: 10px;
@@ -84,6 +98,7 @@ $footer-nav-links-hover-color: $green-light;
           text-transform: uppercase;
           font-size: 14px;
           color: $footer-nav-links-color;
+          -webkit-transition: 0.3s linear;
           transition: 0.3s linear;
           &:hover {
             color: $footer-nav-links-hover-color;
