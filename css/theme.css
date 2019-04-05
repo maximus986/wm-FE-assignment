@@ -379,7 +379,8 @@ ul {
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: 93.75%; }
+  padding: 0 25px;
+  width: 100%; }
 
 .container-fluid {
   padding-right: 2rem;
@@ -400,8 +401,7 @@ ul {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -25px;
-  margin-left: -25px; }
+  margin: 0 -25px; }
 
 .col-xs,
 .col-xs-1,
@@ -421,8 +421,8 @@ ul {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem; }
+  padding-right: 25px;
+  padding-left: 25px; }
 
 .col-xs {
   -webkit-box-flex: 1;
@@ -494,7 +494,7 @@ ul {
 
 @media only screen and (min-width: 480px) {
   .container {
-    width: 87.5%; }
+    width: 430px; }
 
   .col-sm,
   .col-sm-1,
@@ -514,8 +514,8 @@ ul {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem; }
+    padding-right: 25px;
+    padding-left: 25px; }
 
   .col-sm {
     -webkit-box-flex: 1;
@@ -586,7 +586,7 @@ ul {
     max-width: 100%; } }
 @media only screen and (min-width: 768px) {
   .container {
-    width: 90%; }
+    width: 690px; }
 
   .col-md,
   .col-md-1,
@@ -606,8 +606,8 @@ ul {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem; }
+    padding-right: 25px;
+    padding-left: 25px; }
 
   .col-md {
     -webkit-box-flex: 1;
@@ -678,7 +678,7 @@ ul {
     max-width: 100%; } }
 @media only screen and (min-width: 992px) {
   .container {
-    width: 87%; }
+    width: 920px; }
 
   .col-lg,
   .col-lg-1,
@@ -698,8 +698,8 @@ ul {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem; }
+    padding-right: 25px;
+    padding-left: 25px; }
 
   .col-lg {
     -webkit-box-flex: 1;
@@ -1158,7 +1158,7 @@ ul {
   .main-content .work {
     margin: 0 auto 6px auto;
     padding-top: 28px;
-    width: 90%; }
+    width: 100%; }
     .main-content .about .row,
     .main-content .work .row {
       align-items: strecth; }
@@ -1193,7 +1193,7 @@ ul {
       font-size: 3.69rem; }
   .main-content .about,
   .main-content .work {
-    width: 70%;
+    width: 100%;
     padding-top: 48px; }
     .main-content .about .section-title,
     .main-content .work .section-title {
