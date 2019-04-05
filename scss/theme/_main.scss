@@ -17,16 +17,16 @@ $owl-dot-active-background-color: $green-light;
   .lead-slider-wrapper {
     .lead-slider {
       .owl-stage-outer {
-        overflow: hidden; //!Must be removed
+        overflow: initial;
       }
       .owl-dots {
         display: none;
       }
       .owl-nav {
-        // position: absolute;
-        // top: 50%;
-        // left: 0;
-        // width: 100%;
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+        width: 100%;
         color: $lead-slider-nav-color;
         font-size: 20px;
 
@@ -42,10 +42,10 @@ $owl-dot-active-background-color: $green-light;
         }
 
         .owl-prev {
-          left: 0;
+          left: 24px;
         }
         .owl-next {
-          right: 0;
+          right: 24px;
         }
       }
 
@@ -56,27 +56,29 @@ $owl-dot-active-background-color: $green-light;
         padding: 12px 0;
         position: relative;
 
-        .lead-img {
+        &-img {
           width: 50%;
           margin: 0 auto;
         }
+        &-title-wrapper {
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          border-bottom: 2px solid $lead-slider-border-color;
+          .lead-title {
+            text-transform: uppercase;
 
-        .lead-title {
-          text-transform: uppercase;
+            &__small {
+              padding: 24px 0;
 
-          &__small {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            display: block;
-            padding: 24px 0;
-            border-bottom: 2px solid $lead-slider-border-color;
-            text-align: center;
-            font-size: 1.38rem;
-          }
-          &__large {
-            display: none;
+              text-align: center;
+              font-size: 1.38rem;
+            }
+            &__large {
+              display: none;
+            }
           }
         }
       }
@@ -202,16 +204,23 @@ $owl-dot-active-background-color: $green-light;
           .row {
             align-items: center;
           }
-          .lead-img {
+          &-img {
             width: 100%;
           }
-          .lead-title {
-            &__small {
-              display: none;
-            }
-            &__large {
-              display: block;
-              font-size: 2.89rem;
+          &-title-wrapper {
+            position: static;
+            top: auto;
+            left: auto;
+            transform: translateX(0);
+            border-bottom: none;
+            .lead-title {
+              &__small {
+                display: none;
+              }
+              &__large {
+                display: block;
+                font-size: 2.89rem;
+              }
             }
           }
         }

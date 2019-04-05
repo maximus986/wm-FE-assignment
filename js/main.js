@@ -43,8 +43,8 @@ $(document).ready(function() {
   //Lead slider
   leadSlider.owlCarousel({
     items: 1,
-    loop: true,
-    //autoplay: true,
+    autoplay: true,
+    loopt: true,
     dots: true,
     nav: true,
     navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>']
@@ -57,6 +57,7 @@ $(document).ready(function() {
     });
   });
 
+  //Functions
   function linksColors() {
     $('[data-link]').each(function() {
       const color = $(this).data('link');

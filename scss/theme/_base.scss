@@ -16,6 +16,7 @@ body {
   background: $body-background-color;
   color: $text-color;
   font-family: $dinPro;
+  overflow: hidden;
 }
 
 body *:focus {
