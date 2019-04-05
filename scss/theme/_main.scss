@@ -17,7 +17,7 @@ $owl-dot-active-background-color: $green-light;
   .lead-slider-wrapper {
     .lead-slider {
       .owl-stage-outer {
-        overflow: initial; //!Must be removed
+        overflow: hidden; //!Must be removed
       }
       .owl-dots {
         display: none;

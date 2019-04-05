@@ -5,6 +5,8 @@ $(document).ready(function() {
   const searchForm = $('.search-form');
   const mainMenu = $('.main-menu');
   const leadSlider = $('.lead-slider');
+  const toTop = $('.to-top');
+  const body = $('#body');
 
   //Toggle form
   searchIcon.click(function() {
@@ -46,6 +48,13 @@ $(document).ready(function() {
     dots: true,
     nav: true,
     navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>']
+  });
+
+  //Smooth scroll
+  toTop.click(function() {
+    body.scrollIntoView({
+      behavior: 'smooth'
+    });
   });
 
   function linksColors() {
